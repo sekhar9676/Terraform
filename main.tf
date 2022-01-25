@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_security_group" "terraform_sg" {
   name        = "terraform"
-  description = "Allow SSH inbound traffic" 
+  description = "Allow SSH inbound traffics" 
 
   
  ingress {
