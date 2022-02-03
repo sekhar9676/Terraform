@@ -1,0 +1,11 @@
+name: helloword
+on:
+  push:
+    branches: main
+jobs:
+   Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      run: |
+       echo "hello world"
+       echo "i am biggener"
