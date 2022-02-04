@@ -5,8 +5,8 @@ on:
 jobs:
    Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    steps:
-       call-workflow-passing-data:
-         uses: .github/workflows/hello_world.yml
-         secrets:
-           envPAT: ${{ secrets.envPAT }}
+   call-workflow-passing-data:
+    uses: .github/workflows/hello_world.yml
+    secrets:
+     envPAT: ${{ secrets.envPAT }} 
+       
