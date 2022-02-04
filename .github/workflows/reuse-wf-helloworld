@@ -1,4 +1,4 @@
-name: helloword
+name: helloword action
 on:
   push:
     branches: main
@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        call-workflow-passing-data:
-    uses: .github/workflows/hello_world.yml
-    secrets:
-      envPAT: ${{ secrets.envPAT }}
+         uses: .github/workflows/hello_world.yml
+         secrets:
+           envPAT: ${{ secrets.envPAT }}
