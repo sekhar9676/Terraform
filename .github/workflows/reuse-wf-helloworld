@@ -1,0 +1,12 @@
+name: helloword
+on:
+  push:
+    branches: main
+jobs:
+   Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+       call-workflow-passing-data:
+    uses: .github/workflows/hello_world.yml
+    secrets:
+      envPAT: ${{ secrets.envPAT }}
